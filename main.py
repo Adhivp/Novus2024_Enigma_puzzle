@@ -175,8 +175,8 @@ class SudokuApp:
         self.check_button = tk.Button(self.frame, text="Check", command=self.check_solution)
         self.check_button.grid(row=10, columnspan=9, pady=5)
 
-        self.skip_button = tk.Button(self.frame, text="Skip", command=self.skip_to_next_game)
-        self.skip_button.grid(row=11, column=3, columnspan=3, pady=5, sticky=tk.E)
+        #self.skip_button = tk.Button(self.frame, text="Skip", command=self.skip_to_next_game)
+        #self.skip_button.grid(row=11, column=3, columnspan=3, pady=5, sticky=tk.E)
 
         self.next_button = tk.Button(self.frame, text="Next", state=tk.DISABLED, command=self.main_app.fourth_page)
         self.next_button.grid(row=11, column=6, columnspan=3, pady=5, sticky=tk.E)
