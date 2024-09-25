@@ -14,8 +14,8 @@ class NovusPuzzleApp:
         self.root.attributes('-fullscreen', True)  # Fullscreen
         self.points = 0  # Initialize points
         self.current_game = None 
-        self.timer_duration_sudoku = 300  # 5 minutes for each game
-        self.timer_duration_2048 = 10
+        self.timer_duration_sudoku = 420  #  7 minutes 
+        self.timer_duration_2048 = 300 # 5 minutes
         
         # Load background image
         self.bg_image = Image.open(os.path.join(base_dir, "assests", "novus.png"))  # Path to the image you uploaded
