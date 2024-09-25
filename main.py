@@ -223,7 +223,7 @@ class SudokuApp:
         if self.is_complete(user_grid) and self.is_valid_sudoku(user_grid):
             messagebox.showinfo("Congratulations", "You successfully completed the Sudoku!")
             elapsed_time = time.time() - self.main_app.start_time
-            remaining_time = self.main_app.timer_duration - int(elapsed_time)
+            remaining_time = self.main_app.timer_duration_sudoku - int(elapsed_time)
             self.main_app.credit_points(remaining_time)
             self.next_button.config(state=tk.NORMAL)  # Enable the Next button
         else:
