@@ -115,7 +115,6 @@ class NovusPuzzleApp:
             self.timer_label.config(text="Time's up!")
             messagebox.showinfo("Time's up!", "The time is over!")
             if self.current_game == 'sudoku':
-                self.credit_points(0)  # Credit points for remaining time
                 self.fourth_page()  # Proceed to the next game
             else:
                 self.end_game()  # Handle game over scenario
